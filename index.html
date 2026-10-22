@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="es" class="dark overflow-x-hidden">
+<html lang="es" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Argos Networks | Enterprise Zero Trust & Security Hardening</title>
     
+    <!-- FORZAR ANCHO MÁXIMO Y ELIMINAR SCROLL HORIZONTAL EN MÓVILES -->
+    <style>
+        html, body {
+            max-width: 100% !important;
+            overflow-x: hidden !important;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+    </style>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/2026_Argos_Logo-Original_Fondo-Transparente_1000x1000.png">
 
@@ -42,10 +53,10 @@
     <!-- Archivo CSS Personalizado -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="relative min-h-screen flex flex-col justify-between selection:bg-teal-500 selection:text-white bg-[#050814] text-slate-100 overflow-x-hidden w-full max-w-full">
+<body class="relative min-h-screen flex flex-col justify-between selection:bg-teal-500 selection:text-white bg-[#050814] text-slate-100 w-full overflow-x-hidden">
 
-    <!-- CONTENEDOR AISLANTE DE LUCES DE FONDO (Evita el desbordamiento horizontal) -->
-    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+    <!-- CAPA AISLANTE DE LUCES DE FONDO (Encerradas para evitar que el destello derecho estire la pantalla) -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <div class="glow-bg w-72 sm:w-96 h-72 sm:h-96 bg-purple-600/20 -top-20 -left-20"></div>
         <div class="glow-bg w-72 sm:w-[500px] h-72 sm:h-[500px] bg-teal-500/15 top-1/3 -right-20"></div>
         <div class="glow-bg w-60 sm:w-80 h-60 sm:h-80 bg-blue-600/15 bottom-10 left-1/3"></div>
